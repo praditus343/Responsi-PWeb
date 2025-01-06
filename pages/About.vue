@@ -25,7 +25,7 @@
           </div>
           <!-- Profile Image Section -->
           <div class="col-md-6 mb-4 d-flex justify-content-center">
-            <img src="/assets/img/1.png" alt="Egi Danuarta" class="img-fluid rounded-circle shadow-lg" />
+            <img src="static/assets/img/1.png" alt="Egi Danuarta" class="img-fluid rounded-circle shadow-lg" />
           </div>
         </div>
         <!-- Skills Section -->

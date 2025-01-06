@@ -37,16 +37,16 @@
         projects: [
           {
             id: 1,
-            title: 'Project One',
-            description: 'A brief description of Project One.',
-            image: '/assets/img/project1.png',
-            link: 'https://example.com/project1'
+            title: 'NusAIra',
+            description: 'NusAIra adalah platform berbasis teknologi yang dirancang untuk memberdayakan petambak lele melalui integrasi kecerdasan buatan, analitik data, dan manajemen tambak modern. Produk ini menawarkan berbagai fitur utama yang berdampak langsung pada efisiensi dan produktivitas petambak.',
+            image: '/static/assets/img/P1.jpeg',
+            link: 'https://nusaira.vercel.app/'
           },
           {
             id: 2,
             title: 'Project Two',
             description: 'A brief description of Project Two.',
-            image: '/assets/img/project2.png',
+            image: '/static/assets/img/P1.jpeg',
             link: 'https://example.com/project2'
           },
           {

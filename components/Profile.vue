@@ -12,7 +12,7 @@
                 <div class="card-body">
                   <div class="d-flex flex-column align-items-center text-center">
                     <!-- Profile Picture -->
-                    <img src="/assets/img/1.png" alt="Admin" class="rounded-circle" width="150">
+                    <img src="static/assets/img/1.png" alt="Admin" class="rounded-circle" width="150">
                     <div class="mt-1">
                       <h4>Praditus Egi Danuarta</h4>
                       <p class="text-secondary mb-1">IT Enthusiast</p>
