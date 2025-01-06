@@ -39,7 +39,7 @@ export default {
         {
           id: 1,
           title: 'NusAIra',
-          description: 'NusAIra adalah platform berbasis teknologi yang dirancang untuk memberdayakan petambak lele melalui integrasi kecerdasan buatan, analitik data, dan manajemen tambak modern.',
+          description: 'NusAIra adalah platform berbasis teknologi yang dirancang untuk memberdayakan petambak lele melalui integrasi kecerdasan buatan, analitik data, dan manajemen tambak modern. Produk ini menawarkan berbagai fitur utama yang berdampak langsung pada efisiensi dan produktivitas petambak.',
           image: P1Image,
           link: 'https://nusaira.vercel.app/'
         },
