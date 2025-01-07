@@ -52,67 +52,100 @@
       </div>
     </nav>
   </div>
-  </template>
-  <!--  -->
-  <script>
-  export default {
-    name: 'Navbar'
-  };
-  </script>
-  
-  <style scoped>
-  .navbar-dark.bg-dark {
-    background-color: #0f172a !important;
-  }
-  
-  .navbar-bordered {
-    border-bottom: 2px solid #01c879 ;
-  }
-  
+</template>
+
+<script>
+export default {
+  name: 'Navbar'
+};
+</script>
+
+<style scoped>
+.navbar-dark.bg-dark {
+  background-color: #0f172a !important;
+}
+
+.navbar-bordered {
+  border-bottom: 2px solid #01c879;
+}
+
+.logo {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 500px) {
   .logo {
-    width: 100px;
-    margin: 0;
-    padding: 0;
+    width: 90px;
   }
-  
-  @media only screen and (max-width: 500px) {
-    .logo {
-      width: 90px;
-    }
-  }
-  
-  .nav-link {
-    font-weight: 600;
-    margin-right: 20px;
-    position: relative;
-    padding-bottom: 4px;
-    transition: color 0.2s ease-out;
-  }
-  
-  .anim-border-bottom {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .anim-border-bottom::after {
-    content: "";
-    position: absolute;
+}
+
+.nav-link {
+  font-weight: 600;
+  margin-right: 20px;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.2s ease-out;
+}
+
+.anim-border-bottom {
+  position: relative;
+  overflow: hidden;
+}
+
+.anim-border-bottom::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #01c879;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.2s ease-out;
+}
+
+.anim-border-bottom:hover::after {
+  transform: scaleX(1);
+}
+
+.active.nav-item {
+  border-bottom: 2px #01c879 solid;
+}
+
+/* Responsif untuk tampilan mobile */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
     width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-toggler {
+    border-color: #01c879;
+  }
+
+  .navbar-toggler-icon {
     background-color: #01c879;
-    transform: scaleX(0);
-    transform-origin: bottom left;
-    transition: transform 0.2s ease-out;
   }
-  
-  .anim-border-bottom:hover::after {
-    transform: scaleX(1);
+}
+
+@media (max-width: 767px) {
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 14px;
+    padding: 8px;
   }
-  
-  .active.nav-item {
-    border-bottom: 2px #01c879 solid;
+
+  .navbar-nav .nav-item {
+    margin-bottom: 15px;
   }
-  </style>
-  
+}
+</style>
