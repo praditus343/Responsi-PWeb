@@ -1,204 +1,183 @@
 <template>
   <div>
+    <!-- Include Bootstrap and Font Awesome -->
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
     <section class="hero">
       <div class="container">
         <div class="main-body">
           <div class="row gutters-sm">
+            
             <!-- Sidebar Section -->
             <div class="col-md-4 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <div class="d-flex flex-column align-items-center text-center">
-                    <!-- Profile Picture -->
-                    <img src="/assets/img/1.png" alt="Admin" class="rounded-circle" width="150">
-                    <div class="mt-1">
-                      <h4>Praditus Egi Danuarta</h4>
-                      <p class="text-secondary mb-1">IT Enthusiast</p>
-                      <a href="https://www.instagram.com/egidanuarta17/" class="btn btn-primary mb-2">Follow</a>
-                      <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=egidanuarta17@gmail.com" class="btn btn-outline-primary mb-2">Message</a>
-                      <!-- Add a brief description -->
-                      <p class="text-muted mt-2 text-container">
-                        I am a student with a keen interest in the field of IT, particularly in web development and data science. I am always eager to learn new technologies and enhance my skills in this domain.</p>
+              <div class="card profile-card">
+                <div class="card-body text-center">
+                  <img src="/assets/img/1.png" alt="Admin" class="rounded-circle profile-image" width="150">
+                  <div class="profile-info mt-3">
+                    <h4>Praditus Egi Danuarta</h4>
+                    <p class="text-secondary">IT Enthusiast</p>
+                    <div class="profile-buttons">
+                      <a href="https://www.instagram.com/egidanuarta17/" class="btn btn-primary" target="_blank">Follow</a>
+                      <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=egidanuarta17@gmail.com" class="btn btn-outline-primary" target="_blank">Message</a>
                     </div>
+                    <p class="text-muted text-container">
+                      I am a student passionate about IT, especially web development and data science. I love learning new technologies and improving my skills.
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="card mt-3">
+
+              <!-- Social Media Links Card -->
+              <div class="card mt-3 social-links-card">
                 <ul class="list-group list-group-flush">
-                  <!-- Social Media Links -->
-                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                    <h6 class="mb-0"><i class="feather feather-globe mr-2 icon-inline"></i>Website</h6>
-                    <span class="text-secondary">https://bootdey.com</span>
+                  <li class="list-group-item">
+                    <a href="https://egidanuarta.vercel.app/" target="_blank" class="d-flex align-items-center">
+                      <i class="fab fa-globe mr-3"></i> Website
+                      <span class="ml-auto text-secondary">https://egidanuarta.vercel.app/</span>
+                    </a>
                   </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                    <h6 class="mb-0"><i class="feather feather-github mr-2 icon-inline"></i>Github</h6>
-                    <span class="text-secondary">praditus343</span>
+                  <li class="list-group-item">
+                    <a href="https://github.com/praditus343" target="_blank" class="d-flex align-items-center">
+                      <i class="fab fa-github mr-3"></i> Github
+                      <span class="ml-auto text-secondary">praditus343</span>
+                    </a>
                   </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                    <h6 class="mb-0"><i class="feather feather-twitter mr-2 icon-inline text-info"></i>Twitter</h6>
-                    <span class="text-secondary">@egidanuarta17</span>
+                  <li class="list-group-item">
+                    <a href="https://www.instagram.com/egidanuarta17/" target="_blank" class="d-flex align-items-center">
+                      <i class="fab fa-instagram mr-3"></i> Instagram
+                      <span class="ml-auto text-secondary">@egidanuarta17</span>
+                    </a>
                   </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                    <h6 class="mb-0"><i class="feather feather-instagram mr-2 icon-inline text-danger"></i>Instagram</h6>
-                    <span class="text-secondary">@egidanuarta17</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                    <h6 class="mb-0"><i class="feather feather-facebook mr-2 icon-inline text-primary"></i>Facebook</h6>
-                    <span class="text-secondary">egidanuarta17</span>
+                  <li class="list-group-item">
+  <a href="https://www.instagram.com/egidanuarta17/" target="_blank" class="d-flex align-items-center">
+    <i class="fas fa-times mr-3"></i> X
+    <span class="ml-auto text-secondary">@egidanuarta17</span>
+  </a>
+</li>
+
+                  <li class="list-group-item">
+                    <a href="https://www.facebook.com/egidanuarta17" target="_blank" class="d-flex align-items-center">
+                      <i class="fab fa-facebook mr-3"></i> Facebook
+                      <span class="ml-auto text-secondary">egidanuarta17</span>
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
+
             <!-- Main Content Section -->
             <div class="col-md-8">
               <div class="card mb-3">
                 <div class="card-body">
-                  <!-- Personal Information -->
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Full Name</h6>
+                  <div class="info-row">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6>Full Name</h6>
+                      </div>
+                      <div class="col-sm-9 text-secondary">
+                        Praditus Egi Danuarta
+                      </div>
                     </div>
-                    <div class="col-sm-9 text-secondary">
-                      Praditus Egi Danuarta
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6>Email</h6>
+                      </div>
+                      <div class="col-sm-9 text-secondary">
+                        egidanuarta17@gmail.com
+                      </div>
                     </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Email</h6>
-                    </div>
-                    <div class="col-sm-9 text-secondary">
-                      egidanuarta17@gmail.com
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Phone</h6>
-                    </div>
-                    <div class="col-sm-9 text-secondary">
-                      (+62) 857-0012-0940
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Mobile</h6>
-                    </div>
-                    <div class="col-sm-9 text-secondary">
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6>Phone</h6>
+                      </div>
+                      <div class="col-sm-9 text-secondary">
                         (+62) 857-0012-0940
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6>Mobile</h6>
+                      </div>
+                      <div class="col-sm-9 text-secondary">
+                        (+62) 857-0012-0940
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6>Address</h6>
+                      </div>
+                      <div class="col-sm-9 text-secondary">
+                        Sleman, Yogyakarta
+                      </div>
                     </div>
                   </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Address</h6>
-                    </div>
-                    <div class="col-sm-9 text-secondary">
-                      Sleman, Yogyakarta
-                    </div>
-                  </div>
-                  <hr>
                 </div>
               </div>
-              <div class="row gutters-sm">
-                <!-- Skills Section with Icons -->
-                <div class="col-md-12">
-                            <div class="card mb-3">
-                            <div class="card-body mb-4">
-                            <!-- Skills Section Header -->
-                            <h6 class="d-flex align-items-center mb-5">
-                                <i class="fas fa-cogs fa-3x mr-4 text-primary"></i>
-                                <span>Skills</span>
-                            </h6>
-                            <div class="row">
-                                <div class="col-md-3 mb-2">
-                                <div class="skill-card text-center p-3 bg-dark text-light rounded">
-                                    <i class="fab fa-html5 fa-3x mb-2 text-danger"></i>
 
-                                </div>
-                                </div>
-                                <div class="col-md-3 mb-2">
-                                <div class="skill-card text-center p-3 bg-dark text-light rounded">
-                                    <i class="fab fa-css3-alt fa-3x mb-2 text-info"></i>
-                                </div>
-                                </div>
-
-                                <div class="col-md-3 mb-2">
-                                <div class="skill-card text-center p-3 bg-dark text-light rounded">
-                                    <i class="fab fa-js fa-3x mb-2 text-warning"></i>
-                                </div>
-                                </div>
-
-                                <div class="col-md-3 mb-2">
-                                <div class="skill-card text-center p-3 bg-dark text-light rounded">
-                                    <i class="fab fa-node fa-3x mb-2 text-green"></i>
-                                </div>
-                                </div>
-
-                                <div class="col-md-3 mb-2">
-                                <div class="skill-card text-center p-3 bg-dark text-light rounded">
-                                    <i class="fas fa-server fa-3x mb-2 text-muted"></i>
-                                </div>
-                                </div>
-
-                                <div class="col-md-3 mb-2">
-                                <div class="skill-card text-center p-3 bg-dark text-light rounded">
-                                    <i class="fas fa-database fa-3x mb-2 text-blue"></i>
-                                </div>
-                                </div>
-
-                                <div class="col-md-3 mb-2">
-                                <div class="skill-card text-center p-3 bg-dark text-light rounded">
-                                    <i class="fas fa-database fa-3x mb-2 text-green"></i>
-                                </div>
-                                </div>
-
-                                <div class="col-md-3 mb-2">
-                                <div class="skill-card text-center p-3 bg-dark text-light rounded">
-                                    <i class="fab fa-react fa-3x mb-2 text-blue"></i>
-                                </div>
-                                </div>
-
-                                <div class="col-md-3 mb-3">
-                                <div class="skill-card text-center p-3 bg-dark text-light rounded">
-                                    <i class="fab fa-vuejs fa-3x mb-2 text-green"></i>
-                                </div>
-                                </div>
-
-                                <div class="col-md-3 mb-3">
-                                <div class="skill-card text-center p-3 bg-dark text-light rounded">
-                                    <i class="fab fa-figma fa-3x mb-2 text-purple"></i>
-                                </div>
-                                </div>
-                                
-                                <div class="col-md-3 mb-3">
-                                <div class="skill-card text-center p-3 bg-dark text-light rounded">
-                                    <i class="fab fa-python fa-3x mb-2 text-blue"></i>
-                                </div>
-                                </div>
-
-                                <div class="col-md-3 mb-3">
-                                <div class="skill-card text-center p-3 bg-dark text-light rounded">
-                                    <i class="fab fa-cuttlefish fa-3x mb-2 text-blue"></i>
-                                </div>
-                                </div>
-
-                            </div>
-                            </div>
-                        </div>
-                        </div>
+              <!-- Skills Section -->
+              <div class="card mb-2">
+                <div class="card-body">
+                  <h6 class="d-flex align-items-center mb-4">
+                    <i class="fas fa-cogs mr-3 text-primary"></i>
+                    <span>Skills</span>
+                  </h6>
+                  <div class="row skills-grid">
+                    <div class="col-5 col-md-2 mb-5 skill-card">
+                      <i class="fab fa-html5 fa-2x text-danger"></i>
+                      <p>HTML5</p>
+                    </div>
+                    <div class="col-5 col-md-2 mb-5 skill-card">
+                      <i class="fab fa-css3-alt fa-2x text-info"></i>
+                      <p>CSS3</p>
+                    </div>
+                    <div class="col-5 col-md-2 mb-5 skill-card">
+                      <i class="fab fa-js fa-2x text-warning"></i>
+                      <p>JavaScript</p>
+                    </div>
+                    <div class="col-5 col-md-2 mb-5 skill-card">
+                      <i class="fab fa-node fa-2x text-success"></i>
+                      <p>Node.js</p>
+                    </div>
+                    <div class="col-5 col-md-2 mb-5 skill-card">
+                      <i class="fas fa-server fa-2x text-muted"></i>
+                      <p>Server</p>
+                    </div>
+                    <div class="col-5 col-md-2 mb-5 skill-card">
+                      <i class="fas fa-database fa-2x text-primary"></i>
+                      <p>Database</p>
+                    </div>
+                    <div class="col-5 col-md-2 mb-5 skill-card">
+                      <i class="fab fa-react fa-2x text-info"></i>
+                      <p>React.js</p>
+                    </div>
+                    <div class="col-5 col-md-2 mb-5 skill-card">
+                      <i class="fab fa-vuejs fa-2x text-success"></i>
+                      <p>Vue.js</p>
+                    </div>
+                    <div class="col-5 col-md-2 mb-5 skill-card">
+                      <i class="fab fa-python fa-2x text-info"></i>
+                      <p>Python</p>
+                    </div>
+                    <div class="col-5 col-md-2 mb-5 skill-card">
+                      <i class="fas fa-express fa-2x text-success"></i>
+                      <p>Express.js</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+          </div>
+        </div>
+      </div>
     </section>
- </div>
-  </template>
-  
+  </div>
+</template>
 
 <script>
 export default {
@@ -208,203 +187,123 @@ export default {
 
 <style scoped>
 .hero {
-  text-align: center;
-  padding: 100px 0;
+  padding: 40px 0;
   background: #0f172a;
   color: #fff;
-}
-
-.hero .card {
-  background: #1e293b;
-  border-radius: 10px;
-}
-
-.hero .card-body {
-  color: #cbd5e1;
-}
-
-/* Gaya untuk tombol */
-.btn {
-  margin-right: 10px; /* Jarak antara tombol Follow dan Message */
-}
-
-/* Gaya untuk tombol saat hover */
-.btn-primary:hover, .btn-outline-primary:hover {
-  opacity: 0.9; /* Sedikit transparansi pada hover */
-}
-
-/* Gaya untuk link tombol */
-a.btn {
-  display: inline-block; /* Agar tombol dapat diratakan dalam baris */
-}
-
-/* Jarak antara tombol dengan konten berikutnya */
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-/* Responsif */
-@media (max-width: 767px) {
-  .btn {
-    margin-right: 5px; /* Jarak lebih kecil pada layar kecil */
-  }
-}
-
-
-.hero .list-group-item {
-  background: #1e293b;
-  border: none;
-}
-
-.hero .list-group-item:hover {
-  background: #334155;
-}
-
-.icon-inline {
-  width: 24px;
-  height: 24px;
-  stroke-width: 2;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-.list-unstyled {
-  padding-left: 0;
-}
-
-.text-muted {
-  color: #6b7280 !important;
-}
-
-.progress {
-  height: 20px;
-  border-radius: 10px;
-}
-
-.progress-bar {
-  transition: width 0.5s ease;
+  min-height: 100vh;
 }
 
 .card {
   background: #1e293b;
-  border-radius: 10px;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card h6 {
-  color: #cbd5e1;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card .card-body {
-  color: #cbd5e1;
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #01c879;
+  margin-bottom: 20px;
 }
 
-.card .card-body .text-secondary {
-  color: #9ca3af;
-}
-
-.card .card-body .text-muted {
-  color: #6b7280;
-}
-
-.card .card-body .btn {
+.profile-info h4 {
+  color: #fff;
   margin-bottom: 10px;
 }
 
-.card .card-body .list-group-item {
-  background: #1e293b;
-  border: none;
+.profile-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
 }
 
-.card .card-body .list-group-item:hover {
-  background: #334155;
+.btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 500;
 }
 
-.card .card-body .icon-inline {
-  width: 24px;
-  height: 24px;
-  stroke-width: 2;
+.btn-primary {
+  background-color: #01c879;
+  border-color: #01c879;
 }
 
-.card .card-body ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.card .card-body li {
-  margin-bottom: 10px;
-}
-
-.card .card-body .list-unstyled {
-  padding-left: 0;
-}
-
-.card .card-body .text-muted {
-  color: #6b7280 !important;
-}
-
-.card .card-body .text-muted {
-  color: #6b7280 !important;
-}
-
-.card h6 {
-  color: #cbd5e1;
-}
-
-
-.skill-card {
-  background: #1e293b;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.skill-card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.skill-card i {
-  transition: color 0.3s ease;
-}
-
-.skill-card:hover i {
-  color: #01c879; /* Highlight color on hover */
+.btn-outline-primary {
+  color: #01c879;
+  border-color: #01c879;
 }
 
 .text-container {
-  text-align: left; /* Rata kiri untuk teks */
-  margin: 0 auto; /* Center secara horizontal dalam kontainer */
-  max-width: 100%; /* Pastikan lebar maksimal 100% dari kontainer */
-  padding: 0 15px; /* Ruang tambahan di kiri dan kanan */
+  max-width: 100%;
+  padding: 0 15px;
+  text-align: center;
+  color: #cbd5e1;
 }
 
-.text-muted {
-  color: #6b7280;
+.social-links-card .list-group-item {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.social-links-card .list-group-item a {
+  text-decoration: none;
+  color: #fff;
 }
 
-/* Responsif */
-@media (max-width: 767px) {
-  .text-container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+.social-links-card .list-group-item:hover {
+  background-color: #334155;
+}
+
+.info-row .row {
+  margin-bottom: 15px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skill-card {
+  background: #334155;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card:hover {
+  background-color: #01c879;
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card i {
+  transition: transform 0.3s;
+}
+
+.skill-card:hover i {
+  transform: scale(1.2);
+}
+
+.skill-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #cbd5e1;
 }
 
 </style>

@@ -4,50 +4,59 @@
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark px-0 py-3 navbar-bordered">
       <div class="container-xl">
         <!-- Logo -->
-        <NuxtLink to="/">
-          <!-- <img src="/assets/topupin-logo.png" class="logo" alt="..." /> -->
+        <NuxtLink to="/" class="navbar-brand">
+          <!-- <img src="/assets/topupin-logo.png" class="logo" alt="Logo" /> -->
         </NuxtLink>
+        
         <!-- Navbar toggle -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler custom-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
+          @click="toggleMenu"
           aria-controls="navbarCollapse"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div 
+          class="collapse navbar-collapse" 
+          :class="{ 'show': isMenuOpen }" 
+          id="navbarCollapse"
+        >
           <!-- Nav -->
           <div class="navbar-nav mx-lg-auto">
             <NuxtLink
               to="/"
-              class="nav-item anim-border-bottom nav-link"
-              aria-current="page"
+              class="nav-item nav-link anim-border-bottom"
+              active-class="active"
+              exact
+              @click="closeMenu"
             >Home</NuxtLink>
   
             <NuxtLink
               to="/Projects"
-              class="nav-item anim-border-bottom nav-link"
-              aria-current="page"
+              class="nav-item nav-link anim-border-bottom"
+              active-class="active"
+              @click="closeMenu"
             >Projects</NuxtLink>
   
             <NuxtLink
               to="/About"
-              class="nav-item anim-border-bottom nav-link"
-              aria-current="page"
+              class="nav-item nav-link anim-border-bottom"
+              active-class="active"
+              @click="closeMenu"
             >About</NuxtLink>
   
             <NuxtLink
               to="/Contact"
-              class="nav-item anim-border-bottom nav-link"
-              aria-current="page"
+              class="nav-item nav-link anim-border-bottom"
+              active-class="active"
+              @click="closeMenu"
             >Contact</NuxtLink>
           </div>
-          <!-- Right navigation -->
         </div>
       </div>
     </nav>
@@ -56,8 +65,35 @@
 
 <script>
 export default {
-  name: 'Navbar'
-};
+  name: 'Navbar',
+  data() {
+    return {
+      isMenuOpen: false
+    }
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen
+    },
+    closeMenu() {
+      this.isMenuOpen = false
+    }
+  },
+  mounted() {
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      const navbar = document.getElementById('navbarCollapse')
+      const toggler = document.querySelector('.navbar-toggler')
+      if (this.isMenuOpen && navbar && !navbar.contains(e.target) && !toggler.contains(e.target)) {
+        this.isMenuOpen = false
+      }
+    })
+  },
+  beforeDestroy() {
+    // Clean up event listener
+    document.removeEventListener('click', this.closeMenu)
+  }
+}
 </script>
 
 <style scoped>
@@ -71,22 +107,22 @@ export default {
 
 .logo {
   width: 100px;
+  height: auto;
   margin: 0;
   padding: 0;
-}
-
-@media only screen and (max-width: 500px) {
-  .logo {
-    width: 90px;
-  }
 }
 
 .nav-link {
   font-weight: 600;
   margin-right: 20px;
   position: relative;
-  padding-bottom: 4px;
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.85) !important;
   transition: color 0.2s ease-out;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
 }
 
 .anim-border-bottom {
@@ -111,41 +147,68 @@ export default {
   transform: scaleX(1);
 }
 
-.active.nav-item {
-  border-bottom: 2px #01c879 solid;
+.active {
+  border-bottom: 2px solid #01c879;
 }
 
-/* Responsif untuk tampilan mobile */
-@media (max-width: 991px) {
+/* Custom toggler styling */
+.custom-toggler {
+  border: 1px solid #01c879 !important;
+  padding: 0.25rem 0.5rem;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2301c879' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Mobile Styles */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #0f172a;
+    padding: 1rem;
+    margin: 0 -1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .navbar-collapse.show {
+    display: block !important;
+  }
+
   .navbar-nav {
+    padding: 0.5rem 0;
+  }
+
+  .nav-item {
+    margin: 0.5rem 0;
     text-align: center;
+  }
+
+  .nav-link {
+    margin-right: 0;
+    padding: 0.75rem 1rem;
+    display: block;
     width: 100%;
   }
 
-  .navbar-nav .nav-item {
-    margin-right: 0;
-    margin-bottom: 10px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .navbar-toggler {
-    border-color: #01c879;
-  }
-
-  .navbar-toggler-icon {
-    background-color: #01c879;
+  .logo {
+    width: 90px;
   }
 }
 
+/* Small mobile devices */
 @media (max-width: 767px) {
   .navbar-dark .navbar-nav .nav-link {
-    font-size: 14px;
-    padding: 8px;
+    font-size: 16px;
   }
 
-  .navbar-nav .nav-item {
-    margin-bottom: 15px;
+  .container-xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 </style>
