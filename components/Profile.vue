@@ -22,7 +22,7 @@
                       <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=egidanuarta17@gmail.com" class="btn btn-outline-primary" target="_blank">Message</a>
                     </div>
                     <p class="text-muted text-container">
-                      I am a student passionate about IT, especially web development and data science. I love learning new technologies and improving my skills.
+                      I am an IT student who is particularly interested in data science and web development. I enjoy picking up new skills and mastering new technology.
                     </p>
                   </div>
                 </div>
