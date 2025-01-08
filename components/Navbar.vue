@@ -118,11 +118,12 @@ export default {
   position: relative;
   padding: 0.5rem 1rem;
   color: rgba(255, 255, 255, 0.85) !important;
-  transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out, transform 0.2s ease-out; /* Added transform to transition */
 }
 
 .nav-link:hover {
   color: #ffffff !important;
+  transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 .anim-border-bottom {
@@ -147,18 +148,21 @@ export default {
   transform: scaleX(1);
 }
 
+/* Active state */
 .active {
   border-bottom: 2px solid #01c879;
+  transition: border-bottom-color 0.2s ease-out; /* Smooth transition for active state */
 }
 
 /* Custom toggler styling */
 .custom-toggler {
   border: 1px solid #01c879 !important;
   padding: 0.25rem 0.5rem;
+  transition: background-color 0.2s ease-out; /* Smooth background color transition */
 }
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2301c879' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+.custom-toggler:hover {
+  background-color: rgba(1, 200, 121, 0.1); /* Background on hover */
 }
 
 /* Mobile Styles */
