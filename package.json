@@ -16,7 +16,9 @@
     "emailjs-com": "^3.2.0",
     "gsap": "^3.12.5",
     "nuxt": "^3.12.2",
-    "pnpm": "^9.15.3"
+    "pnpm": "^9.15.3",
+    "vue-js-modal": "^2.0.1",
+    "vue2-modal": "^1.5.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",

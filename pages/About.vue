@@ -81,8 +81,9 @@ export default {
   },
   methods: {
     downloadResume() {
-    window.open('/files/CV.pdf', '_blank');
-  }
+      // Menggunakan link Google Drive
+      window.open('https://drive.google.com/file/d/1rVdFp31R-hKD4uKZzj3KfHLZnfwj1knC/view?usp=sharing', '_blank');
+    }
   }
 }
 </script>
@@ -173,4 +174,4 @@ p {
     font-size: 1rem;
   }
 }
-</style> 
+</style>

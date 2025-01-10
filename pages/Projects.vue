@@ -53,6 +53,9 @@
 import P1Image from "../assets/img/P1.jpeg";
 import P2Image from "../assets/img/P2.png";
 import P3Image from "../assets/img/P3.png";
+import P4Image from "../assets/img/P4.png";
+import P5Image from "../assets/img/P5.png";
+import P6Image from "../assets/img/P6.png";
 
 export default {
   name: 'Projects',
@@ -80,7 +83,28 @@ export default {
           description: 'Proyek ini bertujuan untuk menganalisis harga saham PT Telekomunikasi Indonesia Tbk(TLKM) menggunakan teknik Big Data dan Predictive Analytics. Dengan memanfaatkan data historis harga saham, volume perdagangan, dan faktor-faktor ekonomi makro, proyek ini mengembangkan model prediksi yang dapat membantu investor dalam membuat keputusan investasi yang lebih informatif. Analisis ini melibatkan pengumpulan dan pemrosesan data besar dari berbagai sumber, termasuk data pasar saham dan indikator ekonomi. Metode analisis yang digunakan mencakup teknik statistik dan machine learning untuk mengidentifikasi pola dan tren dalam pergerakan harga saham TLKM. Hasil dari proyek ini diharapkan dapat memberikan wawasan yang lebih mendalam mengenai dinamika harga saham TLKM, serta faktor-faktor yang mempengaruhi pergerakannya. Dengan demikian, investor dapat membuat keputusan investasi yang lebih tepat dan strategis berdasarkan analisis yang komprehensif.',
           image: P3Image,
           link: 'https://colab.research.google.com/drive/1fti1OhKwyro_eFDNFv6ZRynCzt3jCExq#scrollTo=lGVGfJS6z2lA'
-        }
+        },
+        {
+          id: 4,
+          title: 'HEART SYNC - Smart Watch Application',
+          description: 'HEART SYNC adalah aplikasi smartwatch yang dirancang untuk memantau dan menganalisis data detak jantung pengguna secara real-time. Aplikasi ini memanfaatkan teknologi sensor detak jantung yang terintegrasi pada smartwatch untuk mengukur dan merekam data detak jantung pengguna. Data tersebut kemudian diproses dan dianalisis menggunakan algoritma machine learning untuk mendeteksi pola dan anomali detak jantung yang mungkin terjadi. Aplikasi ini juga dilengkapi dengan fitur notifikasi yang memberitahukan pengguna jika terdeteksi adanya perubahan signifikan dalam detak jantungnya, sehingga pengguna dapat segera mengambil tindakan yang diperlukan. HEART SYNC dirancang dengan antarmuka yang sederhana dan intuitif, memastikan pengguna dapat dengan mudah mengakses dan memahami data detak jantung mereka. Aplikasi ini juga menyediakan riwayat data detak jantung yang tercatat, sehingga pengguna dapat melacak perkembangan detak jantung mereka dari waktu ke waktu. Dengan HEART SYNC, pengguna dapat memantau kesehatan jantung mereka secara real-time dan proaktif, sehingga dapat mencegah risiko penyakit jantung dan menjaga kesehatan jantung mereka dengan lebih baik.',
+          image: P4Image,
+          link: 'https://praditus343.github.io/IMK/'
+        },
+        {
+          id: 5,
+          title: 'HitungLuas',
+          description: '"HitungLuas" adalah aplikasi web interaktif yang membantu pengguna menghitung luas berbagai bentuk geometri dua dimensi, seperti persegi, persegi panjang, segitiga, dan lingkaran. Aplikasi ini dirancang dengan antarmuka yang sederhana dan intuitif, memudahkan pengguna dalam memasukkan parameter yang diperlukan dan mendapatkan hasil perhitungan secara instan.Aplikasi ini dibangun menggunakan HTML, CSS, dan JavaScript, dengan desain responsif yang memastikan tampilan optimal di berbagai perangkat. Kode sumber lengkap dan dokumentasi proyek tersedia di repository GitHub berikut: https://github.com/praditus343/Perhitungan-Luas-Bangun-Datar',
+          image: P5Image,
+          link: 'https://praditus343.github.io/Perhitungan-Luas-Bangun-Datar/'
+        },
+        {
+          id: 6,
+          title: 'LogicGateHub',
+          description: 'LogicGateHub adalah simulator gerbang logika digital yang dirancang untuk membantu mahasiswa dan profesional dalam memahami dan menguji fungsi gerbang logika dasar. Aplikasi ini menyediakan antarmuka interaktif yang memungkinkan pengguna untuk membuat rangkaian logika dengan menambahkan gerbang logika, input, dan output sesuai kebutuhan. Pengguna dapat mengatur nilai input dan melihat hasil keluaran dari rangkaian logika yang dibuat. LogicGateHub juga dilengkapi dengan fitur simulasi real-time yang memungkinkan pengguna untuk melihat perubahan output saat nilai input diubah. Aplikasi ini dirancang dengan desain yang sederhana dan intuitif, memastikan pengguna dapat dengan mudah mengoperasikannya tanpa memerlukan pengetahuan teknis yang mendalam. Dengan LogicGateHub, pengguna dapat belajar dan menguji gerbang logika digital dengan cara yang interaktif dan menyenangkan.',
+          image: P6Image,
+          link: 'https://praditus343.github.io/Simulator-Gerbang-Logika/'
+        },
       ]
     };
   },
