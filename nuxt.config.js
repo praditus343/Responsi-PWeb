@@ -52,9 +52,11 @@ export default {
     transpile: []
   },
 
-methods: {
-  downloadResume() {
-    window.open(require('~/assets/CV.pdf'), '_blank');
-  }
-}
-}
+  methods: {
+    downloadResume() {
+      window.open(require('~/assets/CV.pdf'), '_blank');
+    }
+  },
+
+  compatibilityDate: '2025-02-04'
+};

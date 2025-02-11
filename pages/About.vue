@@ -41,15 +41,16 @@
                 <p>Experienced in building websites with modern technologies like Vue.js, React, and Angular.</p>
               </div>
             </div>
-            <div class="col-md-4 mb-4">
-              <div class="skill-card">
-                <div class="skill-icon">
-                  <i class="fas fa-cogs"></i>
-                </div>
-                <h4>Software Engineering</h4>
-                <p>Skilled in software design, implementation, and testing using various programming languages and tools.</p>
-              </div>
-            </div>
+<div class="col-md-4 mb-4">
+  <div class="skill-card">
+    <div class="skill-icon">
+      <i class="fas fa-chart-line"></i>
+    </div>
+    <h4>Data Science</h4>
+    <p>Proficient in data analysis, machine learning, and working with large datasets using tools like Python.</p>
+  </div>
+</div>
+
             <div class="col-md-4 mb-4">
               <div class="skill-card">
                 <div class="skill-icon">
