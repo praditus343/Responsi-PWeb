@@ -37,17 +37,17 @@
                 </div>
               </div>
               <div class="card-body">
-                <h5 class="card-title">{{ project.title }}</h5>
-                <p class="card-text">
+                <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ project.title }}</h5>
+                <p class="card-text" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;">
                   {{ truncateText(project.description) }}
                 </p>
-                <div class="project-links">
-                  <a :href="project.link" class="btn btn-primary" target="_blank">
-                    <i class="fas fa-external-link-alt mr-2"></i>View Project
-                  </a>
-                  <button class="btn btn-outline-light" @click="showDetails(project)">
-                    <i class="fas fa-info-circle mr-2"></i>Details
-                  </button>
+                  <div class="project-links d-flex justify-content-between">
+                    <a :href="project.link" class="btn btn-primary" target="_blank">
+                      <i class="fas fa-external-link-alt mr-2"></i>View Project
+                    </a>
+                    <button class="btn btn-outline-light" @click="showDetails(project)">
+                      <i class="fas fa-info-circle mr-2"></i>Details
+                    </button>
                 </div>
               </div>
             </div>
