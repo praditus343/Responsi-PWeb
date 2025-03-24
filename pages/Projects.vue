@@ -247,6 +247,7 @@ export default {
   background: #0f172a;
   color: #fff;
   min-height: 100vh;
+  text-align: center; /* Center the content */
 }
 
 .projects h2 {
