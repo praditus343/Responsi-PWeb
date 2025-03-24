@@ -44,13 +44,6 @@
             >Projects</NuxtLink>
   
             <NuxtLink
-              to="/About"
-              class="nav-item nav-link anim-border-bottom"
-              active-class="active"
-              @click="closeMenu"
-            >About</NuxtLink>
-  
-            <NuxtLink
               to="/Contact"
               class="nav-item nav-link anim-border-bottom"
               active-class="active"

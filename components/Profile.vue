@@ -1,309 +1,349 @@
 <template>
   <div>
-    <!-- Include Bootstrap and Font Awesome -->
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
-    <section class="hero">
+    <!-- About Section -->
+    <section class="about">
       <div class="container">
-        <div class="main-body">
-          <div class="row gutters-sm">
-            
-            <!-- Sidebar Section -->
-            <div class="col-md-4 mb-3">
-              <div class="card profile-card">
-                <div class="card-body text-center">
-                  <img src="/assets/img/1.png" alt="Admin" class="rounded-circle profile-image" width="150">
-                  <div class="profile-info mt-3">
-                    <h4>Praditus Egi Danuarta</h4>
-                    <p class="text-secondary">IT Enthusiast</p>
-                    <div class="profile-buttons">
-                      <a href="https://www.instagram.com/egidanuarta17/" class="btn btn-primary" target="_blank">Follow</a>
-                      <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=egidanuarta17@gmail.com" class="btn btn-outline-primary" target="_blank">Message</a>
-                    </div>
-                    <p class="text-muted text-container">
-                      I am an IT student who is particularly interested in data science and web development. I enjoy picking up new skills and mastering new technology.
-                    </p>
+        <div class="row">
+          <!-- About Me Section -->
+          <div class="col-md-6 mb-4" data-aos="fade-right">
+            <h2 class="text-center mb-4">About Me</h2>
+            <p>
+              I'm <strong>Egi Danuarta</strong>, a passionate web developer based in Yogyakarta, Indonesia.
+            </p>
+            <p>
+              As an enthusiastic student in the IT field, I specialize in web development and data science. My journey involves constant learning and staying up-to-date with the latest technologies to create innovative solutions.
+            </p>
+            <p>
+              With strong communication skills and leadership experience from student organizations, I excel in collaborative environments. I believe in creating meaningful impact through technology while maintaining a user-centered approach.
+            </p>
+            <div class="social-links mt-4">
+              <a href="https://github.com/praditus343" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/praditus-egi-danuarta/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/egidanuarta17/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="https://egidanuarta.vercel.app/" target="_blank" class="social-icon"><i class="fas fa-globe"></i></a>
+            </div>
+            <button class="btn btn-primary" @click="downloadResume">
+              <i class="fas fa-download mr-2"></i>Download Resume
+            </button>
+          </div>
+          <!-- Profile Image Section -->
+          <div class="col-md-6 mb-4 d-flex justify-content-center align-items-center" data-aos="fade-left">
+            <div class="profile-container">
+              <img src="/assets/img/1.png" alt="Egi Danuarta" class="img-fluid rounded-circle shadow-lg" />
+            </div>
+          </div>
+        </div>
+        <!-- Skills Section -->
+        <div class="skills mt-5" data-aos="fade-up">
+          <h2 class="text-center mb-4">Skills</h2>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <h4>Web Development</h4>
+                <p>Expert in modern web technologies including Vue.js, React, and Node.js. Focused on creating responsive and performant applications.</p>
+                <div class="skill-progress">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%"></div>
                   </div>
                 </div>
               </div>
-
-              <!-- Social Media Links Card -->
-              <div class="card mt-3 social-links-card">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <a href="https://egidanuarta.vercel.app/" target="_blank" class="d-flex align-items-center">
-                      <i class="fab fa-globe mr-3"></i> Website
-                      <span class="ml-auto text-secondary">https://egidanuarta.vercel.app/</span>
-                    </a>
-                  </li>
-                  <li class="list-group-item">
-                    <a href="https://github.com/praditus343" target="_blank" class="d-flex align-items-center">
-                      <i class="fab fa-github mr-3"></i> Github
-                      <span class="ml-auto text-secondary">praditus343</span>
-                    </a>
-                  </li>
-                  <li class="list-group-item">
-                    <a href="https://www.instagram.com/egidanuarta17/" target="_blank" class="d-flex align-items-center">
-                      <i class="fab fa-instagram mr-3"></i> Instagram
-                      <span class="ml-auto text-secondary">@egidanuarta17</span>
-                    </a>
-                  </li>
-                  <li class="list-group-item">
-  <a href="https://www.instagram.com/egidanuarta17/" target="_blank" class="d-flex align-items-center">
-    <i class="fas fa-times mr-3"></i> X
-    <span class="ml-auto text-secondary">@egidanuarta17</span>
-  </a>
-</li>
-
-                  <li class="list-group-item">
-                    <a href="https://www.facebook.com/egidanuarta17" target="_blank" class="d-flex align-items-center">
-                      <i class="fab fa-facebook mr-3"></i> Facebook
-                      <span class="ml-auto text-secondary">egidanuarta17</span>
-                    </a>
-                  </li>
-                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h4>Data Science</h4>
+                <p>Proficient in data analysis, machine learning, and statistical modeling using Python, Pandas, and scikit-learn.</p>
+                <div class="skill-progress">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <!-- Main Content Section -->
+            <div class="col-md-4 mb-4">
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h4>Responsive Design</h4>
+                <p>Skilled in creating adaptive layouts using modern CSS frameworks and best practices for optimal user experience across all devices.</p>
+                <div class="skill-progress">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 88%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Section -->
+        <div class="contact mt-5" data-aos="fade-up">
+          <h2 class="text-center mb-4">Get In Touch</h2>
+          <div class="row justify-content-center">
             <div class="col-md-8">
-              <div class="card mb-3">
-                <div class="card-body">
-                  <div class="info-row">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <h6>Full Name</h6>
-                      </div>
-                      <div class="col-sm-9 text-secondary">
-                        Praditus Egi Danuarta
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <h6>Email</h6>
-                      </div>
-                      <div class="col-sm-9 text-secondary">
-                        egidanuarta17@gmail.com
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <h6>Phone</h6>
-                      </div>
-                      <div class="col-sm-9 text-secondary">
-                        (+62) 857-0012-0940
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <h6>Mobile</h6>
-                      </div>
-                      <div class="col-sm-9 text-secondary">
-                        (+62) 857-0012-0940
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <h6>Address</h6>
-                      </div>
-                      <div class="col-sm-9 text-secondary">
-                        Sleman, Yogyakarta
-                      </div>
-                    </div>
+              <div class="contact-card">
+                <div class="contact-info">
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:egidanuarta17@gmail.com">egidanuarta17@gmail.com</a>
                   </div>
-                </div>
-              </div>
-
-              <!-- Skills Section -->
-              <div class="card mb-2">
-                <div class="card-body">
-                  <h6 class="d-flex align-items-center mb-4">
-                    <i class="fas fa-cogs mr-3 text-primary"></i>
-                    <span>Skills</span>
-                  </h6>
-                  <div class="row skills-grid">
-                    <div class="col-5 col-md-2 mb-5 skill-card">
-                      <i class="fab fa-html5 fa-2x text-danger"></i>
-                      <p>HTML5</p>
-                    </div>
-                    <div class="col-5 col-md-2 mb-5 skill-card">
-                      <i class="fab fa-css3-alt fa-2x text-info"></i>
-                      <p>CSS3</p>
-                    </div>
-                    <div class="col-5 col-md-2 mb-5 skill-card">
-                      <i class="fab fa-js fa-2x text-warning"></i>
-                      <p>JavaScript</p>
-                    </div>
-                    <div class="col-5 col-md-2 mb-5 skill-card">
-                      <i class="fab fa-node fa-2x text-success"></i>
-                      <p>Node.js</p>
-                    </div>
-                    <div class="col-5 col-md-2 mb-5 skill-card">
-                      <i class="fas fa-server fa-2x text-muted"></i>
-                      <p>Server</p>
-                    </div>
-                    <div class="col-5 col-md-2 mb-5 skill-card">
-                      <i class="fas fa-database fa-2x text-primary"></i>
-                      <p>Database</p>
-                    </div>
-                    <div class="col-5 col-md-2 mb-5 skill-card">
-                      <i class="fab fa-react fa-2x text-info"></i>
-                      <p>React.js</p>
-                    </div>
-                    <div class="col-5 col-md-2 mb-5 skill-card">
-                      <i class="fab fa-vuejs fa-2x text-success"></i>
-                      <p>Vue.js</p>
-                    </div>
-                    <div class="col-5 col-md-2 mb-5 skill-card">
-                      <i class="fab fa-python fa-2x text-info"></i>
-                      <p>Python</p>
-                    </div>
-                    <div class="col-5 col-md-2 mb-5 skill-card">
-                      <i class="fas fa-express fa-2x text-success"></i>
-                      <p>Express.js</p>
-                    </div>
+                  <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+6285700120940">+62 857-0012-0940</a>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Yogyakarta, Indonesia</span>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </section>
+    
   </div>
 </template>
 
 <script>
+import Navbar from '~/components/Navbar.vue'
+import Footer from '~/components/Footer.vue'
+
 export default {
-  name: 'Profile'
+  name: 'About',
+  components: {
+    Navbar,
+    Footer
+  },
+  mounted() {
+    // Initialize AOS
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    }
+  },
+  methods: {
+    downloadResume() {
+      window.open('https://drive.google.com/file/d/1rVdFp31R-hKD4uKZzj3KfHLZnfwj1knC/view?usp=sharing', '_blank');
+    }
+  }
 }
 </script>
 
 <style scoped>
-.hero {
-  padding: 40px 0;
+.about {
+  padding: 80px 0;
   background: #0f172a;
   color: #fff;
-  min-height: 100vh;
 }
 
-.card {
-  background: #1e293b;
-  border-radius: 15px;
-  border: none;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+.profile-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #01c879;
+  transition: all 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.profile-container:hover {
+  transform: scale(1.05);
+  border-color: #019d6b;
 }
 
-.profile-image {
-  width: 150px;
-  height: 150px;
+.about img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border: 3px solid #01c879;
+  transition: all 0.3s ease;
+}
+
+h2 {
+  color: #cbd5e1;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #01c879;
+}
+
+p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
-.profile-info h4 {
-  color: #fff;
-  margin-bottom: 10px;
+.social-icon {
+  color: #cbd5e1;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
 }
 
-.profile-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin: 15px 0;
-}
-
-.btn {
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-weight: 500;
+.social-icon:hover {
+  color: #01c879;
+  transform: translateY(-3px);
 }
 
 .btn-primary {
   background-color: #01c879;
   border-color: #01c879;
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(1, 200, 121, 0.2);
 }
 
-.btn-outline-primary {
-  color: #01c879;
-  border-color: #01c879;
-}
-
-.text-container {
-  max-width: 100%;
-  padding: 0 15px;
-  text-align: center;
-  color: #cbd5e1;
-}
-
-.social-links-card .list-group-item {
-  background: transparent;
-  border-color: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-}
-
-.social-links-card .list-group-item a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.social-links-card .list-group-item:hover {
-  background-color: #334155;
-}
-
-.info-row .row {
-  margin-bottom: 15px;
-}
-
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
+.btn-primary:hover {
+  background-color: #019d6b;
+  border-color: #019d6b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(1, 200, 121, 0.3);
 }
 
 .skill-card {
-  background: #334155;
-  padding: 15px;
-  border-radius: 10px;
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .skill-card:hover {
-  background-color: #01c879;
-  transform: scale(1.1);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.skill-card i {
-  transition: transform 0.3s;
+.skill-icon {
+  font-size: 2.8rem;
+  color: #01c879;
+  margin-bottom: 20px;
 }
 
-.skill-card:hover i {
-  transform: scale(1.2);
+.skill-card h4 {
+  color: #cbd5e1;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .skill-card p {
-  margin-top: 10px;
+  color: #9ca3af;
   font-size: 1rem;
-  color: #cbd5e1;
+  flex-grow: 1;
 }
 
+.skill-progress {
+  margin-top: 15px;
+}
+
+.progress {
+  height: 8px;
+  background: #2d3748;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #01c879;
+  transition: width 1.5s ease-in-out;
+}
+
+.contact-card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+}
+
+.contact-item i {
+  color: #01c879;
+  font-size: 1.3rem;
+}
+
+.contact-item a, .contact-item span {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #01c879;
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding: 50px 0;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .profile-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .skill-card {
+    padding: 20px;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+
+  .contact-item {
+    font-size: 1rem;
+  }
+}
 </style>
