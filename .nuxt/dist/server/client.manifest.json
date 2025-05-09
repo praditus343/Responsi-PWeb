@@ -7,12 +7,12 @@
     "module": true,
     "resourceType": "script"
   },
-  "/media/ntfs_drive/3. PROYEK/1. Repo Git/Responsi-PWeb/node_modules/nuxt/dist/app/entry.js": {
+  "/run/media/danuarta/New Volume/3. PROYEK/1. Repo Git/Responsi-PWeb/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "isEntry": true,
-    "file": "/media/ntfs_drive/3. PROYEK/1. Repo Git/Responsi-PWeb/node_modules/nuxt/dist/app/entry.js"
+    "file": "/run/media/danuarta/New Volume/3. PROYEK/1. Repo Git/Responsi-PWeb/node_modules/nuxt/dist/app/entry.js"
   }
 }

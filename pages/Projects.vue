@@ -105,6 +105,7 @@ import P3Image from "../assets/img/P3.png";
 import P4Image from "../assets/img/P4.png";
 import P5Image from "../assets/img/P5.png";
 import P6Image from "../assets/img/P6.png";
+import P7Image from "../assets/img/P7.png";
 
 export default {
   name: 'Projects',
@@ -157,6 +158,22 @@ export default {
             'Prediksi Harga Saham',
             'Visualisasi Data',
             'Machine Learning Models'
+          ]
+        },
+        {
+          id: 7,
+          title: 'Ruang-Project-Prototype',
+          description: 'Ruang-Project-Prototype adalah platform co-working space digital yang membantu pengguna menemukan dan memesan ruang kerja sesuai kebutuhan mereka dengan tampilan modern dan pengalaman pengguna yang intuitif.',
+          image: P7Image,
+          link: 'https://ruang-project-prototype.vercel.app/',
+          category: 'Web Development',
+          technologies: ['React.js', 'Tailwind CSS', 'JavaScript', 'Responsive Design'],
+          features: [
+            'Modern UI/UX Design',
+            'Responsive Layout',
+            'Co-working Space Showcases',
+            'Pricing Information',
+            'Testimonials Section'
           ]
         },
         {
